@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>LISTAS ORDENADAS</h2>
+        <h4>Listas ordenadas são listas que seguem uma ordem, para manter uma padronização.</h4><p>Para usarmos a função de listas ordenadas em nosso HTML ultilizamos a tag<code>
+            <mark style="background-color: rgba(18, 210, 231, 0.474);" >&lt;ol&gt; &lt;/ol&gt;</mark>
+        </code>(<i>Ordered List</i>). <br>Eles são divididas em diferentes classes, tais elas são: <br> 1 - Ordenação numerica; <br> a - Ordenação Alfabetica Minúsculo;<br> A - Ordenação Alfabetica Maiúsculo;<br> i - Ordenação de Numeros romanos Minúsculo;<br> I - Ordenação de Numeros romanos Maiúsculo.</p><br><p>Para delimitar a lista usamos a tag<mark style="background-color: rgba(18, 210, 231, 0.486);"> &lt;li&gt; &lt;/li&gt;</mark> para você indicar o inicio da contagem você tem que usar o parametro <big>Start=" "</big></p><p>Vamos ao exemplo a baixo vou printar o código e logo a baixo você verá o resultado!</p><br>
+    <pre>
+    <div style="background-color: rgba(231, 255, 255, 0.761); height: 200px; margin-top: 10px; font-size: small;">
+        <code>
+            &lt;ol type = "A" start= "4"&gt;
+                &lt;li&gt;acodar&lt;/li&gt;
+                &lt;li&gt;tomar banho&lt;/li&gt;
+                &lt;li&gt;Tomar café&lt;/li&gt;
+                &lt;li&gt;escovar os dentes&lt;/li&gt;
+                &lt;li&gt;Trabalhar&lt;/li&gt;
+                &lt;li&gt;Almoçar&lt;/li&gt;
+                &lt;li&gt;Trabalhar&lt;/li&gt;
+                &lt;li&gt;Jantar&lt;/li&gt;
+                &lt;li&gt;Dormir&lt;/li&gt;
+            &lt;/ol&gt;
+        </code>
+    </div>
+    </pre>
+    <p><b>Resultado do exemplo de código acima:</b><br>Porque começou a contar da letra 'D'?<br><small>Porque no inicio da tag &lt;ol&gt; eu coloquei o type="A" e iniciei a função start="4", então se na ordem alfabetica A é 1, D será 4.</small></p>
+       <ol type="A" start="4" >
+            <li>acodar
+            <li>tomar banho
+            <li>Tomar café
+            <li>escovar os dentes
+            <li>Trabalhar
+            <li>Almoçar
+            <li>Trabalhar
+            <li>Jantar
+            <li>Dormir
+       </ol> 
+    <H2>LISTAS NÃO ORDENADAS</H2>
+       <h4>Listas não ordenadas são listas que não precisa de etapas ou ordens para serem seguidas, mais que tem seus marcadores.</h4><p>Para usarmos a funcão de lista não ordenadas, ultilizamos a tag <mark style="background-color: rgba(0, 255, 242, 0.515);">&lt;ul&gt; &lt;/ul&gt;</mark> <i>(Unordered list)</i> como usamos no exemplo anterior usaremos também a tag <mark style="background-color: rgba(0, 255, 221, 0.522);">&lt;li&gt; &lt;/li&gt;</mark> para delimitar a lista.</p>
+       <p>Essas <i>Unordered list</i> elas possuem um marcador padrão que é uma bolinha preta totalmente preenchida <i>(Disc)</i>, mais que podem ser subtituida por outros marcadores como <i>Disc, Circle e Square.</i> Esse exemplo abaixo mostra o uso do marcador Disc:</p>
+
+       <p>Vamos ao exemplo código:</p>
+        <pre>
+        <div style="background-color: rgba(231, 255, 255, 0.761); height: 156px; margin-top: 10px; font-size: small;">
+        &lt;ul type= "dics"&gt;
+            &lt;li&gt;Água&lt;/li&gt;
+            &lt;li&gt;Café&lt;/li&gt;
+            &lt;li&gt;Suco&lt;/li&gt;
+            &lt;li&gt;Chá&lt;/li&gt;
+            &lt;li&gt;Leite&lt;/li&gt;
+            &lt;li&gt;Iorgute&lt;/li&gt;
+            &lt;li&gt;Refrigerante&lt;/li&gt;
+        &lt;/ul&gt;
+        </div>
+        </pre>
+
+        <p><b>Aqui essa a execução do código a cima:</b><br><small>Esse tipo de lista é mais usada para compras de supermecados, lojas, tabela de itens, menu de restaurantes etc.</small></p>
+       <ul type="circle">
+           <li>Água</li>
+           <li>Café</li>
+           <li>Suco</li>
+           <li>Chá</li>
+           <li>Leite</li>
+           <li>Iorgute</li>
+           <li>Refrigerante</li>
+       </ul>
+<h2>MESCLANDO O CONTEÚDO VISTO:</h2>
+       <p>Podemos também criar lista mistas, listas de outras listas. Vejamos o exemplo a seguir:</p>
+    <div style="background-color: rgba(231, 255, 255, 0.761); height: 200px; margin-top: 10px; font-size: small;">
+    <pre>
+    &lt;ol&gt;
+        &lt;li&gt;Item 1&lt;/li>&gt;
+        &lt;li&gt;Item 2&lt;/li>&gt;
+            &lt;ol type= "a"&gt;
+                &lt;li&gt;Item 2.1&lt;/li>&gt;
+                &lt;li&gt;Item 2.2&lt;/li>&gt;
+                &lt;li&gt;Item 2.3&lt;/li>&gt;
+            &lt;/ol>&gt;
+        &lt;li&gt;Item 3&lt;/li>&gt;
+        &lt;li&gt;Item 4&lt;/li>&gt;
+        &lt;li&gt;Item 5&lt;/li>&gt;
+    &lt;/ol>&gt;
+    </pre>
+    </div>
+    <p>Vejamos o resultado do exemplo feito:</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+            <ul type="square">
+                <li>Item 2.1</li>
+                <li>Item 2.2</li>
+                <li>Item 2.3</li>
+            </ul>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    <p><small>Notamos que no Item 2 exitem três casas (a,b,c) a baixo dela puxando para a direita, isso significa que elas são partes do Item 2,identificadas como filhas.</small></p>
+
+<h2>LISTA DE DEFINIÇÕES</h2>
+    <P>É como se fosse um dicionário, temos o termo e suas descrições. É uma lista sem demarcações. <br>Toda alista de definições esta dentro da tag <mark style="background-color: rgba(0, 255, 242, 0.515);">&lt;dl&gt; &lt;/dl&gt;</mark> <i>(Definition list)</i>. Cada termo é um <mark style="background-color: rgba(0, 255, 242, 0.515);">&lt;dt&gt;</mark> <i>(Definition term)</i> e cada descrição é um <mark style="background-color: rgba(0, 255, 242, 0.515);">&lt;dd&gt;</mark> <i>(Definition Description)</i>. <br>Assim como os itens da lista, essas duas tags possuem fechamento opcional, segundo a referência oficial do HTML5.</P>
+
+
+    <h3>Exemplos:</h3>
+
+    <div style="background-color: rgba(231, 255, 255, 0.761); height: 120px; margin-top: 10px; font-size: small;">
+    <pre>
+        &lt;dl&gt;
+            &lt;dt&gt;HTML:&lt;/dt&gt;
+            &lt;dd&gt;Linguagem de criação e marcação de conteúdo de um site.&lt;/dd&gt;
+            &lt;dt&gt;CSS:&lt;/dt&gt;
+            &lt;dd&gt;Linguagem de marcação a criação do design de um site.&lt;/dd&gt;
+            &lt;dt&gt;JavaScript:&lt;/dt&gt;
+            &lt;dd&gt;Linguagem de programação de  interação do conteúdo de um site.&lt;/dd&gt;
+        &lt;/dl&gt;
+    </pre>
+    </div>
+    <p>vejamos o resultado do exemplo feito a cima:</p>
+
+    <dl>
+        <dt>HTML:</dt>
+        <dd>Linguagem de criação e marcação de conteúdo de um site.</dd>
+        <dt>CSS:</dt>
+        <dd>Linguagem de marcação a criação do design de um site.</dd>
+        <dt>JavaScript:</dt>
+        <dd>Linguagem de programação de  interação do conteúdo de um site.</dd>
+    </dl>
+
+
+</body>
+</html>

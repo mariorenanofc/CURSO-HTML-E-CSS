@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando link externos.</h1>
+    <h2>Primero vamos a explicação do conteúdo proposto.</h2>
+    <p>Usar link's externo é adaptar um link de um site qualquer para a uma palavra descrita no seu texto ou sua frase. <br>Vamos ao um exemplo de código:</p>
+    <div>
+        <h3>Você pode acessar o meu <a href="https://github.com/mariorenanofc" target="_blank" rel="external">repositório publico no GitHub</a></h3>
+        <p>para usar o link na frase a cima usei o parametro <mark style="background-color: rgba(0, 200, 255, 0.619);">&lt;a&gt; &lt;/a&gt;</mark> para melhor entender vou colar o código de digitação a baixo para melhorar usa compreenção.</p>
+        <div>
+        <pre>
+        <ol><br>
+            <li>&lt;p&gt;Você pode acessar o meu repositório publico GitHub &lt;/p&gt;</li>
+            <small>Apartir de "repositório publico no GitHub" dentro da tag &lt;p&gt; eu coloque o outra tag <mark style="background-color: rgba(0, 200, 255, 0.619);">&lt;a&gt; &lt;/a&gt;</mark></small>
+            <li>&lt;p&gt;Você pode acessar o meu <mark style="background-color: rgba(0, 200, 255, 0.619);">&lt;a&gt;</mark>repositório publico GitHub<mark style="background-color: rgba(0, 200, 255, 0.619);">&lt;/a&gt;</mark> &lt;/p&gt;</li>
+            <small>Além o atributo da tag &lt;a&gt; vem acompanhado de href="URL"</small>
+            <li>&lt;p&gt;Você pode acessar o meu <mark style="background-color: rgba(0, 200, 255, 0.619);">&lt;a href="URL" target="_blank" rel="external"&gt;</mark>repositório publico GitHub<mark style="background-color: rgba(0, 200, 255, 0.619);">&lt;/a&gt;</mark> &lt;/p&gt;</li>
+            <small>Pronto aqui esta a estrutura completa do link externo, porem existe mais duas funções dentro da tag &lt;a&gt; depois de href="", que são as <i>target="_blank" e rel="external"</i></small>
+        </ol>
+        <p>A <i>target="_blank" -</i>Ele vai abrir o link em uma nova aba.</p>
+        </pre>
+        </div>
+        
+        <h3>Você também pode acessar o <a href="https://www.youtube.com/channel/UC1K7r0wivo5ytG2n24jFVRg" >meu canal no youtube</a></h3>
+        <p>Diferente do primeiro exemplo, este aqui se você experimentar clickar no link ele vai direcionar a página para outro destino sem deixar com que a pessoa passe a voltar a acessar sua página de inicio, se perdendo em vários outros conteúdos.</p>
+    </div>
+    <h1>Usando o links internos.</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a>.</p>
+    <p>Para acessar uma terceira página <a href="NOTICIAS/pag003.html" rel="next">click aqui</a>.</p>
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/Arquivo.pdf" download="Arquivo.pdf" type="application/pdf" target="_blank" rel="external">Baixar Conteúdo em PFD.</a></li>
+        <li><a href="materialize-v1.0.0.zip" download="materialize-v1.0.0.zip" type="aplication.zip"> Baixar Conteúdo em ZIP</a></li>
+    </ul>
+    <p>Aqui foi usado a <mark style="background-color: rgba(0, 200, 255, 0.619);">&lt;a&gt;</mark> para criar o link de download, usei a mesma tag nos dois links.<br>Vamos ao Exemplo de Código:</p>
+    <div style="background-color: #51e4ce1d; padding: auto;">
+    <pre>
+        <p>Baixar Conteúdo em PDF<br>Baixar Conteúdo em ZIP</p>
+        <mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">&lt;ul&gt;</mark>
+           1. <mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">&lt;li&gt</mark>;Baixar Contéudo em PFD<mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">&lt;/li&gt;</mark>
+           1.2 <mark style="background-color: rgba(250, 235, 215, 0.001); color:#e71e9d">&lt;li&gt;&lt;a herf="</mark>livro/Arquivo.pfd<mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">"</mark> <mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">download="</mark>Arquivo.pdf<mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">"</mark> <mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">type="</mark>application.pdf<mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">"&gt;</mark><mark style="background-color: rgba(0, 200, 255, 0.619);">Baixar Contéudo em PFD</mark><mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">&lt;/a&gt;&lt;/li&gt;</mark>
+           2. <mark style="background-color: rgba(250, 235, 215, 0.001); color:#e71e9d">&lt;li&gt;</mark>Baixar Contéudo em ZIP<mark style="background-color: rgba(250, 235, 215, 0.001); color:#e71e9d">&lt;/li&gt;</mark>
+           2.2 <mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">&lt;li&gt;&lt;a</mark> <mark style="background-color: rgba(250, 235, 215, 0.063); color:#e71e9d">herf="</mark>Arquivo.ZIP<mark style="background-color: rgba(250, 235, 215, 0.092); color:#e71e9d">"</mark> <mark style="background-color: rgba(250, 235, 215, 0.087); color:#e71e9d">download="</mark>Arquivo.ZIP<mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">"</mark> <mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">type="</mark>application.zip<mark style="background-color: rgba(250, 235, 215, 0.026); color:#e71e9d">"&gt;</mark><mark style="background-color: rgba(79, 183, 212, 0.619);">Baixar Conteúdo em ZIP</mark><mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">&lt;/a&gt;&lt;/li&gt;</mark>
+        <mark style="background-color: rgba(250, 235, 215, 0); color:#e71e9d">
+        &lt;/ul&gt;
+        </mark>
+    </pre>
+    </div>
+    
+</body>
+</html>

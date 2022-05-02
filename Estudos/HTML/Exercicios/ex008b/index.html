@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Códigos-fontes/ Pré-formatação</h2>
+    <p>1.1 - O comando document.getElementById('teste') é escrito em línguagem javascript.</p>
+    <p>1.2 - O comando <code>document.getElementById('teste')</code> é escrito em línguagem javascript.</p>
+    <p><small>Notamos a diferença quando utilizei o comando <mark style="background-color: rgba(0, 255, 255, 0.529);"> &lt; code &gt;&lt;code/&gt;</mark> no paragrafo 1.2 entre o "document.getElementById('teste')"</small> </p>
+
+    <h2>Vamos a mais um exemplo utilizando o código fonte <mark style="background-color: rgba(0, 255, 255, 0.597);">&lt;code&gt; &lt;code/&gt;</mark></h2>
+    <code style="font-style: oblique; color: rgba(6, 68, 57, 0.987)";><hr>
+        num = int(input('Digite um numero'))
+        if num %  2 == 0;
+            print(f'O número {num} é PAR')
+        else 
+            print(f'O número {num} é IMPAR')
+        print('Fim do programa')
+    </code><hr>
+    <p>Veja que esse exemplo todo o código esta na ordem de digitação, porem eu programei ele em linha, por linha em cada elemento. <br><br>
+    Vamos usar o código <mark style="background-color: rgba(0, 255, 255, 0.679);">&lt;pre&gt; &ltpre/&gt;</mark> par que possamos organizar-ló em estrutura que possamos entender melhor! <br>
+    Segue o exemplo a baixo: <hr> </p>
+
+    <pre>
+        <code style="font-style: oblique; color: rgba(6, 68, 57, 0.987);">
+        <mark style="background-color: rgba(0, 255, 255, 0.597);">&lt;pre&gt;</mark>
+            <mark style="background-color: rgba(0, 255, 255, 0.597);">&lt;code&gt;</mark>
+
+                num = int(input('Digite um numero'))
+                if num %  2 == 0;
+                    print(f'O número {num} é PAR')
+                else
+                    print(f'O número {num} é IMPAR')
+                print('Fim do programa')
+
+            <mark style="background-color: rgba(0, 255, 255, 0.597);">&lt;code/&gt;</mark>
+        <mark style="background-color: rgba(0, 255, 255, 0.597);">&lt;pre/&gt; </mark>   
+
+        </code>
+    </pre>
+    <p>Foi mesclado o <mark style="background-color: rgba(0, 255, 255, 0.597);">&lt;pre&gt;</mark > com o <mark style="background-color: rgba(0, 255, 255, 0.597);">&lt;code&gt;</mark> para que toda a estrutura ficasse alinhada uma a baixo da outra. </p>
+    <hr>
+    <h2>Citações simples <mark style="background-color: rgba(0, 255, 255, 0.597);">&lt;q&gt; &lt;q/&gt;</mark></h2>
+    
+    <p>Como diria um pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <br>Nessa frase a cima eu usei o <mark style="background-color: rgba(0, 255, 255, 0.597);">&lt;q&gt; &lt;q/&gt;</mark> para abrir aspas duplas em um trecho da frase. Mais usei essa função não só para colocar as aspas e sim para atribuir valor a frase.
+    <h2>Citações Completas</h2>
+    <p>Segundo Maurício Samy, no seu livro Fundamentos de CSS3 e HTML5.</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+        A língua que nós, brasileiros, entendemos e usamos para nos comunicar é o português. A linguagem que nós, criadores de conteúdos para a web, enteendemos e usamos para nos comunicar com o navegador é a HTML.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estutando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. E estou gostando para bolas.</p>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+    <p>Aqui usando o <mark style="background-color: rgba(0, 255, 255, 0.597);">&lt;bdo&gt; &lt;/bdo&gt;</mark> e o <mark style="background-color: rgba(0, 255, 255, 0.597);">dir= "rtl"</mark> dentro do comando ele dá direcionamento do texto invertido, como também é usado <mark style="background-color: rgba(0, 255, 255, 0.597);">dir= "ltr"</mark> para texto normal. <br>Normalmente é usado essa função para códigos e senhas enviados para o não identificamento de pessoas não autorizadas, a certos tipos de arquivos, documentos ou pastas.</p>
+</body>
+</html>
