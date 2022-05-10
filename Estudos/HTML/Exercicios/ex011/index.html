@@ -7,33 +7,43 @@
     <title>Imagens</title>
 </head>
 <body>
-    <h1>Imagens dinâmicas</h1>
-    <p>Tente abrir esse site em vários dispositivos diferente!!</p>
-
-    <picture>
-        <source media="(max-width: 720px)" srcset="img/photo-p.png" type="image/png">
-        <source media="(max-width: 1050px)" srcset="img/photo-m.png" type="image/png">
-        <img src="img/photo-g.png" alt="Imagem flexível">
-    </picture>
     <div>
-        <h2>Vamos ao exemplo  de código!</h2>
-        <p>Usamos aqui três tipos de imagens com tamanho diferentes.<br> Uma de 300px (Tamanho P)<br> Outra de 700px (Tamanho M)<br> E outra de 1000px (Tamanho G)<br> Usarei o parametro <code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;picture&gt;&lt;/picture&gt;</mark></code> para o carregamento da imagem. <br>
-        Usamos o parametro <code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;img src="" alt""&gt;</mark></code> para colocarmos a primeira imagem do tamanho G. <br>
-        Agora colocamos colocamos os parametros para que o seu site se adapte a qualquer tipo de janela. Por isso usaremos a seguinte tag <code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;source media="(max-width: px)" srcset="img/tamanho" type="image/png"&gt;</mark></code></p>
-        <pre>
-        <ol>
-    <li><mark style="background-color: #00ffff00; color: #ee844a;">&lt;picture&gt;</mark><br>
-    
-    1.3 - <abbr title="Ao adicionar essa comando, a imagem do tamanho P vai ser automaticamente apresentado na tela, se o tamanho de tela do dispositivo for menor que 750px."><mark style="background-color: #00ffff00; color: #ee844a;">&lt;source media="</mark>(max-width:750px)<mark style="background-color: #00ffff00; color: #ee844a;">" srcset="</mark>img/Tamanho P<mark style="background-color: #00ffff00; color: #ee844a;">" type="</mark>image/png<mark style="background-color: #00ffff00; color: #ee844a;">"&gt;</mark></abbr>
-
-    1.2 - <abbr title="Ao adicionar essa comando, a imagem do tamanho M vai ser automaticamente apresentado na tela se o tamanho de tela do dispositivo for menor que 1050px"><mark style="background-color: #00ffff00; color: #ee844a;">&lt;source media="</mark>(max-width:1050px)<mark style="background-color: #00ffff00; color: #ee844a;">" srcset="</mark>img/Tamanho M<mark style="background-color: #00ffff00; color: #ee844a;">" type="</mark>image/png<mark style="background-color: #00ffff00; color: #ee844a;">"&gt;</mark></abbr>
-
-    1.1 -<abbr title="Aqui colocamos a imagem principal o tamanho G."><mark style="background-color: #00ffff00; color: #ee844a;">&lt;img src="</mark>img/tamanho G" <mark style="background-color: #00ffff00; color: #ee844a;">alt="</mark>imagem flexivel<mark style="background-color: #00ffff00; color: #ee844a;">"&gt;</mark></abbr></li>
-<mark style="background-color: #00ffff00; color: #ee844a;">&lt;/picture&gt;</mark></li>
-        </ol>
-        </pre>
-    <p>Notamos que a ordem esta inversa, a contagem esta de baixo para cima. E você fará exatamente assim, primeiro vai criar a tag de <code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;picture&gt;</mark></code>, em seguida adicionar dentro da primeira tag outra tag (1.1)<code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;img=scr"" alt=""&gt;</mark></code>, e então depois as outras duas tag's (1.2/1.3) <code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;sourse media="" srcste="" type=""&gt;</mark></code>.</p>
+        <h1>Imagens dinâmicas</h1>
+        <p>Tente abrir esse site em vários dispositivos diferente!!</p>
+        <picture>
+            <source media="(max-width: 720px)" srcset="img/photo-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="img/photo-m.png" type="image/png">
+            <img src="img/photo-g.png" alt="Imagem flexível">
+        </picture>
+        <div>
+            <h2>Vamos ao exemplo  de código!</h2>
+            <p>Usamos aqui três tipos de imagens com tamanho diferentes.<br> Uma de 300px (Tamanho P)<br> Outra de 700px (Tamanho M)<br> E outra de 1000px (Tamanho G)<br> Usarei o parametro <code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;picture&gt;&lt;/picture&gt;</mark></code> para o carregamento da imagem. <br>
+            Usamos o parametro <code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;img src="" alt""&gt;</mark></code> para colocarmos a primeira imagem do tamanho G. <br>
+            Agora colocamos colocamos os parametros para que o seu site se adapte a qualquer tipo de janela. Por isso usaremos a seguinte tag <code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;source media="(max-width: px)" srcset="img/tamanho" type="image/png"&gt;</mark></code></p>
+            <pre>
+            <ol>
+        <li><mark style="background-color: #00ffff00; color: #ee844a;">&lt;picture&gt;</mark><br>
+        
+        1.3 - <abbr title="3 - Ao adicionar essa comando, a imagem do tamanho P vai ser automaticamente apresentado na tela, se o tamanho de tela do dispositivo for menor que 750px."><mark style="background-color: #00ffff00; color: #ee844a;">&lt;source media="</mark>(max-width:750px)<mark style="background-color: #00ffff00; color: #ee844a;">" srcset="</mark>img/Tamanho P<mark style="background-color: #00ffff00; color: #ee844a;">" type="</mark>image/png<mark style="background-color: #00ffff00; color: #ee844a;">"&gt;</mark></abbr>
+        1.2 - <abbr title="2 - Ao adicionar essa comando, a imagem do tamanho M vai ser automaticamente apresentado na tela se o tamanho de tela do dispositivo for menor que 1050px"><mark style="background-color: #00ffff00; color: #ee844a;">&lt;source media="</mark>(max-width:1050px)<mark style="background-color: #00ffff00; color: #ee844a;">" srcset="</mark>img/Tamanho M<mark style="background-color: #00ffff00; color: #ee844a;">" type="</mark>image/png<mark style="background-color: #00ffff00; color: #ee844a;">"&gt;</mark></abbr>
+        1.1 -<abbr title="1 - Aqui colocamos a imagem principal o tamanho G."><mark style="background-color: #00ffff00; color: #ee844a;">&lt;img src="</mark>img/tamanho G" <mark style="background-color: #00ffff00; color: #ee844a;">alt="</mark>imagem flexivel<mark style="background-color: #00ffff00; color: #ee844a;">"&gt;</mark></abbr></li>
+        <mark style="background-color: #00ffff00; color: #ee844a;">&lt;/picture&gt;</mark></li>
+            </ol>
+            </pre>
+        <p>Notamos que a ordem esta inversa, a contagem esta de baixo para cima. E você fará exatamente assim, primeiro vai criar a tag de <code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;picture&gt;</mark></code>, em seguida adicionar dentro da primeira tag outra tag (1.1)<code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;img=scr"" alt=""&gt;</mark></code>, e então depois as outras duas tag's (1.2/1.3) <code><mark style="background-color: #00ffff00; color: #ee844a;">&lt;sourse media="" srcste="" type=""&gt;</mark></code>.</p>
+        </div>
+        <p><a href="index01.html">Click aqui para testar a adptação de imagem.</a></p>
     </div>
-    <p><a href="index01.html">Click aqui para testar a adptação de imagem.</a></p>
+    <div>
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML</p>
+        <audio preload="metadata" controls>
+            <source src="midia/1 - Introdução de rede de computadores.mp3" type="audio/mpeg">
+            <source src="midia/1 - Introdução de rede de computadores.ogg" type="audio/ogg">
+            <source src="midia/1 - Introdução de rede de computadores.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não pode reproduzir esse audio <a href="midia/1 - Introdução de rede de computadores.mp3">Click aqui baixar esse audio.</a> em PDF</p>
+        </audio>
+        <p><a href="index02.html">Acessar conteúdo de código!</a></p>
+    </div>
 </body>
 </html>

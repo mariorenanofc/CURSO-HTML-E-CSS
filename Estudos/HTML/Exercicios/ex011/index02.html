@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicação de código</title>
+    <style> 
+     mark{
+         color: rgb(223, 18, 18);
+         background-color: #00ffff00;
+     }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Vamos a explicação!</h1>
+        <p>Aqui você vai ver a explicação de todo conteúdo sobre a tag <i><mark>&lt;audio&gt; &lt;/audio&gt;</mark></i>, então vamos lá.<br>Existem diversas maneiras de se adicinonar um áudio no HTML, uma das maneiras mais simples é usando a tag abaixo.</p>
+        
+        <pre>
+    <div>
+        <mark><abbr title="Essa é a maneira mais simples">&lt;audio src=""&gt; &lt;/audio&gt;</abbr></mark>
+        <p>Aqui usamos o parametro <mark>autoplay</mark> para quando o navegador abrir a tela ela possa ser reproduzido, alguns ou outros navegadores poderá não reproduzir, vai variar muito de navegador, para nevegador.<br>Outro parametro aconselhavo para uso é o <mark>controls</mark> aonde você vai ter acesso as funções de áudio (<i> play, pause, volume, duração e até baixar o audio</i>). <br><br><mark>&lt;audio src="" controls&gt; &lt;audio&gt;</mark></p>
+        <audio src="#" controls></audio>
+    </div>
+    <div>
+        <mark><abbr title="Essa segunda maneira é uma forma prática para que o seu navegador identifique qual tipo de arquivo ele suporta e possa reproduzir o áudio">&lt;audio preload="</mark>metadata<mark>" controls></abbr></mark>
+            <mark>&lt;source src="</mark>midia/1 - Intro.mp3<mark>" type="</mark>audio/mpeg<mark>"></mark>
+            <mark>&lt;source src="</mark>midia/1 - Intro.ogg<mark>" type="</mark>audio/ogg<mark>"></mark>
+            <mark>&lt;source src="</mark>midia/1 - Intro.wav<mark>" type="</mark>audio/wav<mark>"></mark>
+            <mark><p></mark>Infelizmente seu navegador não pode reproduzir esse audio <a href="midia/1 - Intro.mp3"></mark>Click aqui baixar esse audio.<mark></a></p>
+        <mark></audio></mark>
+        </div>
+        </pre>
+        <p>Foi colocado varios<mark>&lt;source src="" type=""&gt;</mark>para que o computador entenda que nem todos os sistemas operacionais são compativeis com o formato de música aquequadro, então foi colocado em três formatos <b>MP3,OGG e  WAV.</b></p>
+    </div>
+    <p><a href="index.html">Voltar ao Conteúdo abordado!</a></p>
+</body>
+</html>
