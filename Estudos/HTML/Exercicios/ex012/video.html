@@ -7,10 +7,20 @@
     <title>Exemplo de vídeo</title>
 </head>
 <body>
-    <h1>Inserindo vídeos hospedados localmente</h1>
-    <p>Este video esta hospedado no meu proprio servidor</p>
-    <video  poster="img/piscina.jpg" width="500" controls>
-        <source src="midia/new-video-720p.mp4" type="video-mp4">
-    </video>
+
+
+    <div>
+        <video controls width="500" poster="img/piscina.jpg" loop>
+            <source src="midia/new-video-720p.webm" type="video/webm">
+            <source src="midia/new-video-720p.mp4" type="video/mp4">
+            <source src="midia/new-video-720p.ogv" type="video/ogg">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        </video>
+    </div>
+    <a href="index.html">Voltar para a página anterior.</a>
+    <h1>Inserindo vídeos do youtube</h1>
+
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/l-aS0XSmShM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 </body>
 </html>
