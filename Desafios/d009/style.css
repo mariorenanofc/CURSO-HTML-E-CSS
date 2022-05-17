@@ -1,6 +1,7 @@
 body{
     text-align: center;
     background-color: #000000;
+    
 }
 
 a {
@@ -16,4 +17,10 @@ h1 {
 
 p {
     color: beige;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
