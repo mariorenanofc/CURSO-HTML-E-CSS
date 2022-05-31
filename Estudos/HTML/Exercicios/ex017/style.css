@@ -21,4 +21,16 @@ body{
      border-radius: 0 6% 0 6%;
  }
 
+ /* ----O B S E R V A Ç Ã O ! ! !----
+    
+    shorthand font
+    - font-style -> font-weight -> font-size -> font-family
+ 
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter | normal | bold | bolder
+    font-size: 3em;
+    font-style: italic;
+    
+*/
+
  
