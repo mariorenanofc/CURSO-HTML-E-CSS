@@ -1,0 +1,46 @@
+
+
+body {
+    background-color: #141c22ed;
+    align-items: center;
+    position: relative;
+    color: #E9EDEF;
+}
+
+div{
+    justify-content: flex-end;
+    border: solid 2px #ffffff;
+    border-radius: 40px;
+    font-family: 'Asap Condensed', sans-serif;
+    background-color: #111B21;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: absolute;
+    right: 0px;
+    top: 65px;
+    flex-direction: column;
+    
+}
+
+img {
+    height: 50px;
+    width: 70px;
+    border: solid -2px #ffffff;
+    
+}
+
+h1 {
+    text-align:center;
+    background-color: #111B21;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    left: 2px;
+    font-size: 59px;
+    margin: 0;
+    padding: 0;
+
+}
+a {
+    color: #E9EDEF;
+}
