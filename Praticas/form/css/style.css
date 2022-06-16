@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300&display=swap');
+
+body {
+    content: "";
+    background: url('../../img/back-groud-ecola.webp');
+    background-repeat: no-repeat;
+    opacity: 0.;
+    opacity: 1s ease-in-out;
+    display: flex;
+}
+
+.forms {
+    background-color: rgba(42, 248, 15, 0.171);
+    border: -2px solid cover ;
+    width: 300px;
+    height: 600px;
+    justify-content: flex-end;
+}
+.title__inicio {
+    border: solid #ff3c00 2px;
+    color: #ff3c00;
+
+}
+
+.title__inicio {
+    
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Calistoga', cursive;
+}
+
+.text__label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.initial {
+    font-family: 'Atma', cursive;
+    font-size: 60PX;
+}
+.coment {
+    font-family: 'Galada', cursive;
+    font-size: 34px;
+    text-align: right;
+    position: relative;
+}
+
+.material-symbols-outlined {
+ 
+
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 100,
+    'opsz' 0;
+    color: red;
+    
+}

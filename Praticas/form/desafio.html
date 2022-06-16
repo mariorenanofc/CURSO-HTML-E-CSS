@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="../form/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <section>
+        <h1 class="initial"><span class="material-symbols-outlined">
+            lightbulb
+            </span> Formulário de preenchimento! </h1>
+        <P class="coment">Nesse exemplo de pratica vamos ver um formulário produzido por me, de acordo com meus conhecimentos adquiridos na faculdade e no curso de HTML5 e CCS3 </P>
+    </section>
+
+    <form class="forms" action="processa_form.php" method="post">
+        <fieldset>
+            <legend class="title__inicio">Dados Gerais</legend>
+
+            <label class="text__label" for="nome">Nome:</label>
+            <input placeholder="Nome Completo" type="text" minlength="3" id="nome" required>
+            <br>
+            <label class="text__label" for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" name="data_nascimento" id="data_nascimento">
+            <br>
+            <label class="text__label" for="cpf">CPF:</label>
+            <input placeholder="123.456.789-98" type="text" maxlength="11" minlength="11" id="cpf" name="cpf">
+            <br>
+            <label class="text__label" for="tel">Tel. Celular:</label>
+            <input type="tel" placeholder="87-99999-9999" pattern="[0-9]{2}-{[0-9]{5}-[0-9]{4}" required maxlength="13" name="tel" id="tel">
+        </fieldset>
+
+         <fieldset>
+            <legend class="title__inicio">Fale conosco</legend>
+
+            <label class="text__label" for="tipo_msg">Tipo de Mensagem:</label>
+            <label class="text__label" for="tipo__msg">Sugestão</label>
+            <input type="radio" name="tipo__msg" value="Sugestão">
+            <label class="text__label" for="tipo__msg">Critica</label>
+            <input type="radio" name="tipo__msg" value="Crítica">
+            <label class="text__label" for="Tipo__msg">Elógio</label>
+            <input type="radio" name="tipo__msg" value="Elogio">
+            <br> <br>
+            <label class="text__label" for="msg">Mensagem:</label> 
+            <textarea name="msg" id="msg" cols="30" rows="5"></textarea>
+         </fieldset>
+
+
+
+         <fieldset style="text-align: center;">
+            <button type="submit">Enviar Menssagem</button>
+            <button type="reset">Limpar Formulário</button>
+         </fieldset>
+    </form>
+</body>
+</html>
