@@ -8,25 +8,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="principal">Criando sites com HTML e CSS</h1>
-    <h1>Aprendendo HTML</h1>
-    <h2>HTML Básico</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus adipisci commodi quas corporis? Maxime natus, doloremque rerum fugiat ipsa aspernatur facere itaque omnis consectetur iste, esse laborum nihil, reprehenderit quasi.</p>
-    <h2>HTML intermediário</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt aspernatur rem unde quidem aperiam ex dolorem reprehenderit expedita, mollitia asperiores natus. Velit vero porro quos quis itaque, eaque modi? Rem!</p>
-    <h2>HTML Avançado</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ab aspernatur magni modi alias consequuntur natus porro dolores. Nisi possimus, adipisci harum nobis vitae eius molestiae architecto dolorum saepe quia!</p>
-    <h1>Aprendendo CSS</h1>
-    <h2>CSS Básico</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore molestiae non repellendus impedit, accusamus numquam possimus voluptate assumenda facere alias cumque atque quam. Rerum, eveniet inventore. At, amet perferendis!</p>
-    <h2>CSS Intermediário</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, unde! Voluptatum modi unde cumque quaerat voluptate perferendis repudiandae maxime, natus voluptatibus voluptas praesentium nesciunt dicta totam. Dolore minima quidem et!</p>
-    <h2>CSS Avançado</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente architecto nihil odio quibusdam, sequi similique ad perspiciatis, culpa mollitia laudantium impedit quisquam necessitatibus eveniet sit blanditiis, dolorum veritatis commodi aut.</p>
+    <div class="example">
+        <h1 id="principal">Criando sites com HTML e CSS</h1>
+        <h1>Aprendendo HTML</h1>
+        <h2 class="basic">HTML Básico</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus adipisci commodi quas corporis? Maxime natus, doloremque rerum fugiat ipsa aspernatur facere itaque omnis consectetur iste, esse laborum nihil, reprehenderit quasi.</p>
+        <h2  class="intermediary">HTML intermediário</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt aspernatur rem unde quidem aperiam ex dolorem reprehenderit expedita, mollitia asperiores natus. Velit vero porro quos quis itaque, eaque modi? Rem!</p>
+        <h2 class="avanced">HTML Avançado</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ab aspernatur magni modi alias consequuntur natus porro dolores. Nisi possimus, adipisci harum nobis vitae eius molestiae architecto dolorum saepe quia!</p>
+        <h1>Aprendendo CSS</h1>
+        <h2 class="basic">CSS Básico</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore molestiae non repellendus impedit, accusamus numquam possimus voluptate assumenda facere alias cumque atque quam. Rerum, eveniet inventore. At, amet perferendis!</p>
+        <h2 class="intermediary">CSS Intermediário</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, unde! Voluptatum modi unde cumque quaerat voluptate perferendis repudiandae maxime, natus voluptatibus voluptas praesentium nesciunt dicta totam. Dolore minima quidem et!</p>
+        <h2 class="avanced">CSS Avançado</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente architecto nihil odio quibusdam, sequi similique ad perspiciatis, culpa mollitia laudantium impedit quisquam necessitatibus eveniet sit blanditiis, dolorum veritatis commodi aut.</p>
+    </div>
 
-    <h1>Comentário sobre o conteúdo dessa aula</h1>
-    <p> Em HTML é <code>id = ""</code> em CSS é <code>#</code> <br> Em HTML é <code>class = ""</code> em CSS é <code>.</code></p>
+    <div class="explication">
+        <h1>Comentário sobre o conteúdo dessa aula</h1>
+            <p> <strong>Em HTML é <code>id = ""</code> em CSS é <code>#</code></strong> ELE É UNICO
+            <br>Uma regra do W3c é que não se pode usar <code>id"nomeado"</code> em outras tags. <br>
+             <strong>Em HTML é <code>class = ""</code> em CSS é <code>.</strong></code> ELE PODE SER PLURAL<br>Quando eu quero usar mais de um elemento para deixar ou o mesmo tamanho, ou mesmo modelo, agente usa uma <code>class = ""</code>.</p>
 
+        <h3>Explição do exemplo acima:</h3>
+            <p>Do conteúdo acima colocamos style em vários 
+                <code>h1's e h2's</code> 
+                <br>Ex.: 
+                    <br> 
+                        <span class="basic">HTML Básico e CSS Básico</span> Foi usada a <code>class = "basic"</code></p>
+        <pre>
+    .basic {
+        color: rgb(5, 255, 5);
+        background-color: black;
+    }               
+        </pre>
+
+
+            <p><span class="intermediary">HTML Intermediário e CSS intermediário</span>Foi usada a <code>class = "intermediary"</code></p>
+
+        <pre>
+    .intermediary {
+        color: rgb(249, 249, 79);
+        background-color: #000000; 
+    }
+        </pre>
+
+            <p><span class="avanced">HTML Avançado e CSS Avançado</span> Foi usada a <code>class = ""avanced</code></p>
+
+        <pre>
+    .avanced {
+        color: rgb(250, 75, 75);
+        background-color: #000000;
+    }    
+        </pre>
+    </div>
+
+    <div>
+        <h4>Abreviação:</h4>
+        <p>No conteúdo acima existe várias definições nas definições de tag's. Em um H1 temos definição de style nela, de <code>class = ""</code> como também <code>id= ""</code>.</p>
+
+        <p>Definição de <code>id = ""</code></p><h1 id="principal">Criando sites com HTML e CSS</h1><br>
+        <p>Definção de style</p><h1>Aprendendo HTML <br> Aprendendo CSS</h1> 
+        <p>Definição de <code>class= ""</code></p><h1 class="basic">HTML e CSS Básico</h1><h1 class="intermediary">HTML e CSS Intermediário</h1><h1 class="avanced">HTML e CSS Avançado</h1>
+
+        
+    </div>
     <p style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><a href="../../index.html">Pagina inicial</a></p>
 </body>
 </html>

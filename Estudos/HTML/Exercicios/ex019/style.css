@@ -3,10 +3,13 @@
 body {
     background-color: rgba(213, 254, 213, 0.504);
     font-family: Arial, Helvetica, sans-serif;
+    display: initial;
 }
 
 h1 {
     color: rgb(51, 174, 51);
+    text-align: center;
+    font-size: 40px;
 }
 
 h1#principal {
@@ -17,10 +20,36 @@ h1#principal {
     border: solid 0px;
     border-radius: 30px 30px 0 0;
 }
-h2 {
-    color: rgb(155, 202, 155);
+.basic {
+    color: rgb(5, 255, 5);
+    background-color: black;
+    font-size: 23px;
+}
+
+
+.intermediary {
+    color: rgb(249, 249, 79);
+    background-color: #000000;
+    font-size: 23px; 
+}
+
+.avanced {
+    background-color: #000000;
+    color: rgb(250, 75, 75);
+    font-size: 23px;
+}
+p {
+    text-align: justify;
+    font-size: 15px;
 }
 code {
     color: rgb(213, 254, 213);
     background-color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.example {
+    background-color: rgba(70, 252, 213, 0.275);
+    border: solid 1px yellow;
+    border-style: solid;
 }
