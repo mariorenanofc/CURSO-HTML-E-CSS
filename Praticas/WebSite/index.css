@@ -54,3 +54,7 @@ footer a {
 .container {
     padding: 0px 50px;
 }
+
+p {
+    text-align: justify;
+}
