@@ -1,69 +1,91 @@
-body {
-    color: white;
-    background-color: rgb(38, 38, 38);
-    font-family: Arial, Helvetica, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Roboto:wght@400;500;700&display=swap');
 
-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    align-items: center;
-    padding: 16px;
-}
-
-a {
-    color: white;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
-a:hover {
-    color: #00f900;
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
 }
 
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #00f900;
-}
+/*.navbar---inicio.*/
+ .navbar {
+    position: fixed;
+    width: 100%;
+    /*background-color: #00f900;*/
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+ }
 
-.center {
-    text-align: center;
-}
-
-h1 {
-    color: #00f900;
-}
-
-footer img {
-    height: 35px;
-    width: 35px;
-}
-
-footer {
+ .navbar .max-width {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .navbar .logo a{
+    color: rgb(249, 248, 248);
+    font-size: 35px;
+    font-weight: 500;
+ }
+
+ .navbar .logo a span {
+    color: #007600;
+ }
+
+ .navbar .menu li {
+    list-style: none;
+    display: inline-block;
+ }
+
+ .navbar .menu li a {
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+ }
+
+ .navbar .menu li a:hover {
+    color: #00f900;
+ }
+
+ /*Home inicio*/
+
+.home {
+    display: flex;
+    background: url(img/web_backgroud.jpg) no-repeat center;
+    height: 100vh;
+    color: #000000;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;   
 }
 
-footer a {
-    margin: 10px;
-    text-align: center;
+.home .max-width {
+    margin: auto 0 auto 40px;
 }
 
-.container {
-    padding: 0px;
+.home .home-content .text-1 {
+    font-size: 27px;
 }
 
-p {
-    text-align: justify;
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -3px;
 }
-nav {
-    background-color: black;
+
+.home .home-content .text-3 {
+    font-size: 30px;
+    margin: 5px 0;
 }
-nav a img {
-    width: 80px;
-    height: 80px;
-    border: 2px solid #0000;
-    border-radius: 50%;
+
+.home .home-content .text-3 span {
+    color: #007600;
+    font-weight: 500;
 }
