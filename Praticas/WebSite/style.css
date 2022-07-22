@@ -116,7 +116,7 @@ html {
 section {
     padding: 100px 0;
 }
-.about {
+.about .projects {
     font-family: 'Roboto', sans-serif;
 }
 .about .about-content {
@@ -125,7 +125,7 @@ section {
     align-items: center;
     justify-content: space-between;
 }
-.about .title {
+section .title {
     font-family: 'Ubuntu', sans-serif ;
     text-align: center;
     font-size: 40px;
@@ -134,7 +134,7 @@ section {
     padding-bottom: 20px;
     position: relative;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -144,8 +144,7 @@ section {
     background: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "Who I am ";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -154,6 +153,12 @@ section {
     color: #0Bf900;
     padding: 5px;
     transform: translateX(-50%);
+}
+.about .title::after{
+    content: "Who I am ";
+}
+.projects .title::after{
+    content: "Who I am ";
 }
 .about .about-content .left {
     width: 45%;
@@ -201,6 +206,11 @@ section {
     cursor: pointer;
     display: none;
 }
+/* Sessão projetos*/
+.projects {
+
+}
+
 /* Responsivo*/
 @media (max-width: 1300px) {
     .navbar .max-width{
@@ -264,7 +274,7 @@ section {
         padding: 10px 30px;
     }
 
-    .about .about-content .left {
+    .about .about-content .column {
         width: 50%;
     }
     
