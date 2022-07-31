@@ -112,18 +112,18 @@ html {
     color: #fff;
     background-color: #0Bf900;
 }
-/*..Sessão sobre..*/
+
+/*..Menu Mobile..*/
+.menu-btn {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Todos os códigos similares*/
 section {
     padding: 100px 0;
-}
-.about .projects {
-    font-family: 'Roboto', sans-serif;
-}
-.about .about-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 section .title {
     font-family: 'Ubuntu', sans-serif ;
@@ -154,10 +154,20 @@ section .title::after{
     padding: 5px;
     transform: translateX(-50%);
 }
-section .title::after{
-    content: "Who I am ";
+
+
+/*..Sessão sobre..*/
+
+.about, .projects {
+    font-family: 'Roboto', sans-serif;
 }
-.projects .title::after{
+.about .about-content, .projects .projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .title::after{
     content: "Who I am ";
 }
 .about .about-content .left {
@@ -200,16 +210,49 @@ section .title::after{
     object-fit: cover;
     border-radius: 50%;
 }
-/*..Menu Mobile..*/
-.menu-btn {
-    color: #fff;
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-}
-/* Sessão projetos*/
-.projects {
 
+/* Sessão projetos*/
+.projects{
+    background: #111;
+    color: #fff;
+}
+.projects .title::before{
+    background:#0Bf900;
+}
+.projects .title::after{
+    content: "practiced";
+    background: #111;
+}
+.projects .projects-content .card {
+    width: calc(40% - 20px);
+    background:#222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition:  all 0.3s ease;
+}
+.projects .projects-content .card:hover {
+    background: #0Bf900;
+    color: #111;
+}
+.projects .projects-content .card .box {
+    transition: all 0.3s ease;
+}
+.projects .projects-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .projects-content .card ion-icon {
+    font-size: 70px;
+    color: #0Bf900;
+}
+.projects .projects-content .card:hover ion-icon{
+    color: #111;
+}
+.projects .projects-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 /* Responsivo*/
