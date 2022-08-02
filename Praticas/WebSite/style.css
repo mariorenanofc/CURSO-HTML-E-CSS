@@ -154,7 +154,7 @@ section .title::after{
     padding: 5px;
     transform: translateX(-50%);
 }
-.about, .projects, .skills {
+.about, .projects, .skills, .teams {
     font-family: 'Roboto', sans-serif;
 }
 .about .about-content, .projects .projects-content, .skills .skills-content {
@@ -212,14 +212,16 @@ section .title::after{
 }
 
 /* Sessão projetos*/
-.projects{
+.projects, .teams{
     background: #111;
     color: #fff;
 }
-.projects .title::before{
+.projects .title::before,
+.teams .title::before{
     background:#0Bf900;
 }
-.projects .title::after{
+.projects .title::after,
+.teams .title::after{
     content: "practiced";
     background: #111;
 }
@@ -328,6 +330,25 @@ section .title::after{
 .skills .skills-content .right .mysql::before{
     width: 0%;
 }
+
+/* Sessão Equipe */
+
+.teams .title::after{
+    content: "Specialized";
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+.teams .carousel .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:  5px solid #0Bf900;
+}
+
 /* Responsivo*/
 @media (max-width: 1300px) {
     .navbar .max-width{
